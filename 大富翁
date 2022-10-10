@@ -1,0 +1,21 @@
+
+import random
+
+def random_draw():
+    n = 0
+    names = []
+    while True:
+        name = input('請輸入選擇:')
+        n += 1
+        names.append(name)
+        answer = input('是否要繼續輸入:(T/F)')
+        if answer == 'F':
+            print('結束輸入，開始篩選')
+            break
+        else:
+            print('繼續輸入')
+    print('目前列表中有:',str(names))
+    ran = int(random.randint(0, n))
+    print('選出的答案:',names[ran])
+    
+random_draw()
