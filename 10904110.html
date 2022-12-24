@@ -9,6 +9,11 @@ html {scroll-behavior: smooth;}
 </head>
 <body style="background-color:#FFF3DE ">
 <div style="height:100px;background-color:#805300">
+<p id="demo">收集霜淇淋吧!</p>
+
+<button type="button" onclick=
+
+"document.getElementById('demo').innerHTML='快來看看霜淇淋11種口味介紹!'">Try it</button>
 <style>
 #header {height:150px;background-color:#805300;padding:1em}
 #article {height:400px;background-color:#FFF3DE;padding:1em}
@@ -380,3 +385,15 @@ r.style.display ="none";
 w.style.display ="block";
 }
 </script></body>
+<form>
+有哪一個霜淇淋口味是你想吃的嗎?: <input type="text" id="name">
+</form>
+<button type="button" onclick="myFunc()">Click Me!</button>
+
+<script>
+function myFunc(){
+alert( document.getElementById("name")+"已經是過去限量口味，吃不到了... ".value);
+}
+</script>
+</body>
+</html>
