@@ -3,14 +3,18 @@ body {margin: 0px;}
 html {scroll-behavior: smooth;}
 </style>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1" >
-<title style="color:#80FFFF">收集霜淇淋吧!</title>
-</head>
-<body style="background-color:#FFF3DE ">
-<div style="height:100px;background-color:#805300">
-<p id="demo">收集霜淇淋吧!</p>
 
+<p id="demo">收集霜淇淋吧!</p>
+<form>
+有哪一個霜淇淋口味是你想吃的嗎?: <input type="text" id="name">
+</form>
+<button type="button" onclick="myFunc()">Click Me!</button>
+
+<script>
+function myFunc(){
+alert( "已經是過去限量口味，吃不到"+document.getElementById("name").value);
+}
+</script>
 <button type="button" onclick=
 
 "document.getElementById('demo').innerHTML='快來看看霜淇淋11種口味介紹!'">Try it</button>
@@ -385,15 +389,6 @@ r.style.display ="none";
 w.style.display ="block";
 }
 </script></body>
-<form>
-有哪一個霜淇淋口味是你想吃的嗎?: <input type="text" id="name">
-</form>
-<button type="button" onclick="myFunc()">Click Me!</button>
 
-<script>
-function myFunc(){
-alert( document.getElementById("name")+"已經是過去限量口味，吃不到了... ".value);
-}
-</script>
 </body>
 </html>
